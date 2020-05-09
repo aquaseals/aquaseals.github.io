@@ -8,6 +8,22 @@ body {
     background-color: #292B37;
 }
 
+
+.credit {
+
+    color: white;
+    font-size: 7px;
+    position: absolute;
+    bottom: 50px;
+    font-family: Asap, sans-serif;
+    position: absolute;
+    left: 48%;
+    margin-left: -50px;
+}
+
+
+
+
 header {
     background: white;
     padding: 20px;
