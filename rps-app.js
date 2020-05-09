@@ -22,7 +22,7 @@ function lose(userChoice, compChoice, imgid) {
     setTimeout(function() { document.getElementById(userChoice).classList.remove('red-glow')}, 300);
 }
 function draw(userChoice, compChoice) {
-    result_div.innerHTML = userChoice + 'user'.fontsize(4).sub() + ' equals ' + compChoice + 'user'.fontsize(4).sub() + " . It's a draw";
+    result_div.innerHTML = userChoice + 'user'.fontsize(4).sub() + ' equals ' + compChoice + 'comp'.fontsize(4).sub() + " . It's a draw";
     document.getElementById(userChoice).classList.add('gray-glow');
     setTimeout(function() { document.getElementById(userChoice).classList.remove('gray-glow')}, 300);
 }
