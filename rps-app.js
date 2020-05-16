@@ -5,6 +5,10 @@ let user_score_span = 0;
 let computer_score_span = 0;
 let result_div = document.getElementById('result');
 
+function play(soundFile) {
+    var audio = new Audio(soundFile);
+    audio.play();
+};
 
 function win(userChoice, compChoice,imgid){
     user_score_span++
@@ -12,6 +16,8 @@ function win(userChoice, compChoice,imgid){
     result_div.innerHTML = userChoice + 'user'.fontsize(4).sub() + ' beats ' + compChoice +  'comp'.fontsize(4).sub() + '. You win! 🔥👍🏽';
     document.getElementById(userChoice).classList.add('green-glow');
     setTimeout(function() { document.getElementById(userChoice).classList.remove('green-glow')}, 300);
+    var a = document.getElementById('winSound');
+    play('sounds/win.mp3');
 
 }
 function lose(userChoice, compChoice, imgid) {
@@ -20,6 +26,8 @@ function lose(userChoice, compChoice, imgid) {
     result_div.innerHTML = userChoice + 'user'.fontsize(4).sub() + ' loses to ' + compChoice + 'comp'.fontsize(4).sub() +'. You lose... 😟';
     document.getElementById(userChoice).classList.add('red-glow');
     setTimeout(function() { document.getElementById(userChoice).classList.remove('red-glow')}, 300);
+    var b = document.getElementById('loseSound')
+    play('sounds/lose.mp3');
 }
 function draw(userChoice, compChoice) {
     result_div.innerHTML = userChoice + 'user'.fontsize(4).sub() + ' equals ' + compChoice + 'comp'.fontsize(4).sub() + " . It's a draw";
