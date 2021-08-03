@@ -1,41 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="rps-styles.css">
-    
-</head>
-<body>
-<header>
-    <h1>Rock Paper Scissors</h1>
-</header>
-
-<div class="score-board" >
-<div id="user-label" class="badge">user</div>
-<div id = "computer-label" class="badge">comp</div>
-<span id= "user-score">0</span>:<span id= "computer-score">0</span>
-</div>
-<div class="result" id= "result">
-    <p>Welcome to Rock Paper Scissors!</p>
-</div>
-<div class= credit id= credit>
-    <h1>Game made by: Haya Asif</h1>
-</div>
-
-<div class="choices">
-    <div class="choice" id="Rock">
-        <img src="images/rock.png" alt="">
-    </div>
-    <div class="choice" id="Paper">
-        <img src="images/paper.png" alt="">
-    </div>
-    <div class="choice" id="Scissors">
-        <img src="images/scissors.png" alt="">
-    </div>
-</div>
-
-<p id="action-message"> Make your move.</p>
-<script src="rps-app.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ain's Math Game</title>
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body onload="hide()">
+        <div class="title">
+            <p>Welcome to Ains Math Game</p>
+        </div>
+        <div id="result">
+            <p>You completed the quiz! Here are your results: </p>
+            <ol>
+                <li id="1"></li>
+                <li id="2"></li>
+                <li id="3"></li>
+                <li id="4"></li>
+                <li id="5"></li>
+                <li id="6"></li>
+                <li id="7"></li>
+                <li id="8"></li>
+                <li id="9"></li>
+                <li id="10"></li>
+                <li id="11"></li>
+                <li id="12"></li>
+                <li id="13"></li>
+                <li id="14"></li>
+                <li id="15"></li>
+            </ol>
+            <p id="percentage">hello</p>
+        </div>
+        <div id="quiz" class="quiz">
+            <div class="question">
+                <p id="question">27 + 8 = ?</p>
+            </div>
+            <div class="answerbox">
+                <input type="number" id="answer" placeholder="Enter your Answer" style="height: 1cm;">
+            </div>
+            <div class="submit" id="submit">
+                <p >Submit</p>
+            </div>
+        </div>
+        
+        <div id = "choices">
+            <div class="difficulty">
+                <p>Difficulty:</p>
+            </div>
+            <div id="easy" class="buttons">
+                <p>Easy (+)</p>
+            </div>
+            <div id="medium" class="buttons">
+                <p>Medium (-)</p>
+            </div>
+            <div id="hard" class="buttons">
+                <p>Hard (+ and -)</p>
+            </div>
+        </div>
+        <div class="space">
+            <p>space</p>
+        </div>
+        <script src="math-game.js"></script>
+        
+    </body>
 </html>
