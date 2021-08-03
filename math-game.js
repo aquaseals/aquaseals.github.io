@@ -10,7 +10,7 @@ let quiz = document.getElementById('quiz')
 let endStatement = document.getElementById('result')
 let percentage = document.getElementById('percentage')
 let result = []
-let questionQuantity = 5
+let questionQuantity = 15
 var answer = 0
 
 
